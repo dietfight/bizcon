@@ -60,7 +60,7 @@ const Main = React.createClass({
   },
 
   _noop() {
-    //console.log('ddd');
+    console.log('noop');
   },
 
   render() {
@@ -70,7 +70,7 @@ const Main = React.createClass({
         <RaisedButton label="Super Secret Password" primary={true} onTouchTap={this._handleTouchTap} />
         <TimePicker
           format="ampm"
-          hintText="12hr Format" onShow={this._noop}/>
+          hintText="12hr Format" onShow={this._noop} onDismiss={this._noop}/>
         <LinearProgress mode="determinate" value={60} />
       </div>
     );
