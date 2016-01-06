@@ -3,6 +3,7 @@
 import React, { Component, PropTypes } from 'react';
 import s from './LoginPage.scss';
 import withStyles from '../../decorators/withStyles';
+import RaisedButton from 'material-ui/lib/raised-button';
 
 const title = 'Log In';
 
@@ -22,7 +23,14 @@ class LoginPage extends Component {
       <div className={s.root}>
         <div className={s.container}>
           <h1>{title}</h1>
-          <p>...</p>
+
+          <div>
+            <RaisedButton label="Login via Google" />
+          </div>
+
+          <div>
+            <RaisedButton label="Login via Facebook" />
+          </div>
         </div>
       </div>
     );

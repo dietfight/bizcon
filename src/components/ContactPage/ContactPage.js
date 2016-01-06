@@ -3,6 +3,7 @@
 import React, { Component, PropTypes } from 'react';
 import s from './ContactPage.scss';
 import withStyles from '../../decorators/withStyles';
+import TextField from 'material-ui/lib/text-field';
 
 const title = 'Contact Us';
 
@@ -22,7 +23,23 @@ class ContactPage extends Component {
       <div className={s.root}>
         <div className={s.container}>
           <h1>{title}</h1>
-          <p>...</p>
+
+          <div>
+            <TextField
+                hintText="Hint Text"
+                floatingLabelText="Name" />
+          </div>
+
+          <div>
+            <TextField
+                hintText="Hint Text"
+                floatingLabelText="Email" /></div>
+
+          <div>
+            <TextField
+                hintText="Hint Text"
+                floatingLabelText="Message" />
+          </div>
         </div>
       </div>
     );

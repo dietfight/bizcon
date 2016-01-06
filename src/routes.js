@@ -20,7 +20,7 @@ const router = new Router(on => {
 
   on('/material', async () => <MaterialPage />);
 
-  on('/contact', async () => <MaterialPage />);
+  on('/contact', async () => <ContactPage />);
 
   on('/login', async () => <LoginPage />);
 
